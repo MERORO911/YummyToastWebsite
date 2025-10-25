@@ -1,0 +1,97 @@
+{% extends "master.html" %}
+
+{% block title %}
+Yummy Toast - List of all bookings
+{% endblock %}
+
+
+{% block content %}
+
+<script>
+
+    // Function to calculate the total cost
+    function calculateTotal() {
+        const toastPrice = {
+            "蜂蜜麥片吐司": 45,    // Define prices for each type of toast
+            "白吐司": 20,
+            // Add prices for other toast types...
+            "全麥吐司": 40,
+            "多穀吐司": 35,
+            "法式麵包": 30,
+            "全素吐司": 20,
+        };
+
+        const toppingPrice = {
+            "草莓": 15,    // Define prices for each topping
+            "酪梨": 15,
+            "起司": 10,
+            "培根": 15,
+            "雞肉": 15,
+            "紅豆": 5,
+            "抹茶": 5,
+            "蛋": 10,
+            "半熟蛋": 10,
+            "玉米": 5,
+            "火腿": 15,
+            "洋蔥": 5,
+            "番茄": 5,
+            "高麗菜": 10,
+            "鮪魚": 5,
+            "豬肉": 10,
+            "牛肉": 25,
+            "馬鈴薯沙拉": 5,
+            "香蕉": 5,
+            "巧克力醬": 5,
+            "草莓果醬": 5,
+            "藍莓果醬": 5,
+            "棉花糖": 10,
+            "芋泥": 5,
+            "蜂蜜": 5,
+            "奶油": 5,
+
+            // Add prices for other toppings...
+        };
+
+        // Retrieve selected values from the form
+        const selectedToast = document.getElementById("id_toast").value;
+        const selectedToppings = [
+            document.getElementById("id_sub_1").value,
+            document.getElementById("id_sub_2").value,
+            document.getElementById("id_sub_3").value,
+        ];
+
+        // Calculate total cost based on selected items
+        let totalCost = toastPrice[selectedToast] || 0;  // Default to 0 if toast not found
+        selectedToppings.forEach(topping => {
+            totalCost += toppingPrice[topping] || 0;  // Default to 0 if topping not found
+        });
+
+        number = document.getElementById("id_num").value
+
+        return totalCost * number;
+    }
+
+</script>
+
+<div class="container m-3">
+
+
+
+    <ul class="list-group ">
+        {% for booking in bookings %}
+        <li class="list-group-item" style="background-color:rgb(222, 255, 156);">
+            {{ booking.name }} : 您訂購了{{ booking.store.storename }}的
+            {{ booking.num }}個{{ booking.toast }}，配料為{{ booking.sub_1 }}、{{ booking.sub_2 }}和{{ booking.sub_3 }}。<br>
+            此訂單將於{{ booking.date }}的{{ booking.hour }}點{{ booking.min }}分送達{{ booking.address }}。
+
+
+
+
+        </li>
+
+        {% endfor %}
+
+    </ul>
+
+</div>
+{% endblock %}

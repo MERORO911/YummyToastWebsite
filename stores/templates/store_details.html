@@ -1,0 +1,24 @@
+{% extends "master.html" %}
+
+{% block title %}
+Details about {{ store.storename }}
+{% endblock %}
+
+{% block content %}
+
+<div class="container m-5">
+  <div class="card mx-auto" style="width: 18rem;">
+
+    <div class="card-body">
+      <h5 class="card-title">{{ store.storename }}</h5>
+      <p class="card-text"> {{ store.get_storetype_display }}店，坐落於{{ store.city }}的分店。</p>
+      <a href="{% url 'booking' store.id %}" class="btn btn-primary">預約</a>
+    </div>
+  </div>
+</div>
+
+<div class="container m-5">
+  <p>Back to: <a href='/stores'>Stores</a></p>
+</div>
+
+{% endblock %}

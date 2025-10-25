@@ -1,0 +1,116 @@
+{% extends "master.html" %}
+{% load static %}
+
+{% block title %}
+Yummy Toast
+{% endblock %}
+
+
+{% block content %}
+
+<body>
+  <div class="p-5 text-black rounded" style="background-color: #ffd6aa;">
+
+    <h1>✨️最新資訊✨️</h1>
+    <p>
+      🌟 美味口味新登場！ 🌟
+      <br><br>
+      踏入美食的饗宴並品嚐我們全新的吐司口味！讓您的味蕾隨著我們精心調配的口味而狂歡！我們引以為傲的吐司系列，不僅為您帶來傳統經典的口感，更在口味上大膽創新，讓您盡情探索屬於吐司的新世界。
+      <br><br>
+      🍞 新口味登場 🍞
+      <br>
+      🥑 牛油果暢銷！迷人的牛油果風味，結合鬆軟的吐司，讓您感受到滋味十足的美好享受。
+      <br>
+      🍓 草莓夢幻！在每一口中品嚐到鮮甜草莓的香氣，為您帶來甜蜜驚喜的美味饗宴。
+      <br>
+      🧀 芝士狂熱！濃郁的芝士風味融合於酥脆吐司，帶來令人愉悅的口感饗宴。
+      <br><br>
+      無論是早餐的開始、下午茶的伴侶，或是隨時的小吃，我們的吐司口味絕對能滿足您的味蕾。現在就來探索我們全新的口味，讓您的每一天都充滿美味和驚喜！
+      <br>
+      儘管前來體驗我們獨特的吐司口味，感受美味與創新的完美融合！快來店裡嘗試並愛上我們的美味新口味吧！
+    </p>
+  </div>
+  <br>
+  <h2 class='text-success' style="text-align: center;">美味吐司</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+    <div class="card col-sm-3" style="width:400px">
+      <img class="card-img-top mx-auto img-fluid"
+        src="https://i0.wp.com/brianrecipe.com/wp-content/uploads/2022/01/BRN_2284.jpg"
+        style="width:400px; height:250px">
+      <div class="card-body">
+        <h4 class="card-title">蜂蜜麥片吐司🆕新品暢銷</h4>
+        <p class="card-text">這款暢銷的蜂蜜麥片吐司融合了蜂蜜的甜美風味和麥片的營養口感。完美的選擇，無論您是想享受美味還是保持健康！</p>
+      </div>
+    </div>
+    <div class="card col-sm-3" style="width:400px ">
+      <img class="card-img-top mx-auto img-fluid"
+        src="https://www.supermarket.com.tw/Content/images/%E5%90%90%E5%8F%B8%E6%83%85%E5%A2%831(1).jpg"
+        style="width:400px; height:250px">
+      <div class="card-body">
+        <h4 class="card-title">👍白吐司</h4>
+        <p class="card-text">我們的經典白吐司深受大家喜愛，柔軟的口感和多用途的風味是它受歡迎的原因。不管搭配甜食還是鹹食，都能滿足您的味蕾。</p>
+      </div>
+    </div>
+    <div class="card col-sm-3" style="width:400px">
+      <img class="card-img-top mx-auto img-fluid"
+        src="https://cdn.cybassets.com/media/W1siZiIsIjE5MzQ5L3Byb2R1Y3RzLzM0MjA0NzM2LzE2MzE3NzMzNzJfMjUxMzc4YWY0NmJjNGFlNTUzYTkuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=2f726d40a1ef7119"
+        style="width:400px; height:250px">
+      <div class="card-body">
+        <h4 class="card-title">👍全麥吐司</h4>
+        <p class="card-text">我們熱情推薦這款健康的全麥吐司，它濃郁的纖維和營養成分使其成為理想的健康選擇，同時也不失美味。</p>
+      </div>
+    </div>
+
+    <button type="button" onclick="window.location.href='/toast_detail/'"
+      style="background-color: #ffd6aa; color: black; border-color: rgb(228, 140, 89);"
+      class="float-end">查看更多...</button>
+
+  </div>
+
+  <br><br>
+
+
+  <h2 class='text-success' style="text-align: center;">經典配料</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+    <div class="card col-sm-3" style="width:400px">
+      <img class="card-img-top mx-auto img-fluid"
+        src="https://global-blog.cpcdn.com/tw/2021/12/AdobeStock_343373754--1-.jpeg" style="width:400px; height:250px">
+      <div class="card-body">
+        <h4 class="card-title">草莓❄️期間限定</h4>
+        <p class="card-text">季節限定的配料，新鮮的草莓給吐司帶來了色彩繽紛的果香享受。</p>
+      </div>
+    </div>
+    <div class="card col-sm-3" style="width:400px ">
+      <img class="card-img-top mx-auto img-fluid"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPUqrJEp_z6nbqb0KBunGOUGVAqtsSOKRDMA&usqp=CAU"
+        style="width:400px; height:250px">
+      <div class="card-body">
+        <h4 class="card-title">酪梨🆕新品暢銷</h4>
+        <p class="card-text">酪梨含有健康的單不飽和脂肪酸，提供了營養價值和滿足感，是健康美味的選擇。</p>
+      </div>
+    </div>
+    <div class="card col-sm-3" style="width:400px">
+      <img class="card-img-top mx-auto img-fluid" src="https://cw1.tw/CW/images/fck/F1450831795371.jpg"
+        style="width:400px; height:250px">
+      <div class="card-body">
+        <h4 class="card-title">起司🆕新品暢銷</h4>
+        <p class="card-text">無論是單獨享用還是與其他配料搭配，都能為您帶來美味的享受。</p>
+      </div>
+    </div>
+
+    <button type="button" onclick="window.location.href='/ingredient_detail/'"
+      style="background-color: #ffd6aa; color: black; border-color: rgb(228, 140, 89);"
+      class="float-end">查看更多...</button>
+  </div>
+  <br>
+
+
+
+
+
+
+
+</body>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends "master.html" %}
+
+{% block title %}
+Yummy Toast
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Toast</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static '/css/club.css' %}">
+
+<body>
+    <br>
+    <h2 class='text-success' style="text-align: center;">美味吐司</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <div class="card col-sm-3" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://i0.wp.com/brianrecipe.com/wp-content/uploads/2022/01/BRN_2284.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">蜂蜜麥片吐司🆕新品暢銷</h4>
+                <p class="card-text">這款暢銷的蜂蜜麥片吐司融合了蜂蜜的甜美風味和麥片的營養口感。完美的選擇，無論您是想享受美味還是保持健康！</p>
+            </div>
+        </div>
+        <div class="card col-sm-3" style="width:400px ">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://www.supermarket.com.tw/Content/images/%E5%90%90%E5%8F%B8%E6%83%85%E5%A2%831(1).jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">👍白吐司</h4>
+                <p class="card-text">我們的經典白吐司深受大家喜愛，柔軟的口感和多用途的風味是它受歡迎的原因。不管搭配甜食還是鹹食，都能滿足您的味蕾。</p>
+            </div>
+        </div>
+        <div class="card col-sm-3" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://cdn.cybassets.com/media/W1siZiIsIjE5MzQ5L3Byb2R1Y3RzLzM0MjA0NzM2LzE2MzE3NzMzNzJfMjUxMzc4YWY0NmJjNGFlNTUzYTkuanBlZyJdLFsicCIsInRodW1iIiwiNjAweDYwMCJdXQ.jpeg?sha=2f726d40a1ef7119"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">👍全麥吐司</h4>
+                <p class="card-text">我們熱情推薦這款健康的全麥吐司，它濃郁的纖維和營養成分使其成為理想的健康選擇，同時也不失美味。</p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://img.shoplineapp.com/media/image_clips/653612db2fe7b000179c80e7/original.jpg?1698042587"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">多穀吐司</h4>
+                <p class="card-text">多穀吐司獨特的風味和多種穀物的組合，讓您享受不同的口感和營養。無論是單吃還是搭配其他食材，都是絕佳的選擇。</p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://shoplineimg.com/5f31fd2c09cae600314dabf0/62956cd5c3417500301627eb/800x.jpg?"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">法式麵包</h4>
+                <p class="card-text">我們的法式麵包以其獨特的法式風味和酥脆的外皮而聞名。無論是作為一餐主菜還是陪伴其他美食，都是絕佳的選擇。</p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://superbuy-hifamily.cdn.hinet.net/superbuy_admin/images/product/683/PR2205040018_main.jpg?23112202"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">全素吐司</h4>
+                <p class="card-text">這款全素吐司不含任何動物性成分，是選擇素食者的理想之選。滿足您對美味和健康的需求，絕對值得一試。</p>
+            </div>
+        </div>
+
+    </div>
+    <br>
+</body>
+
+</html>
+
+{% endblock %}

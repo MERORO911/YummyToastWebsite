@@ -1,0 +1,262 @@
+{% extends "master.html" %}
+
+{% block title %}
+Yummy Toast
+{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Toast</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static '/css/club.css' %}">
+
+<body>
+    <br>
+    <h2 class='text-success' style="text-align: center;">經典配料</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+        <div class="card col-sm-3" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://global-blog.cpcdn.com/tw/2021/12/AdobeStock_343373754--1-.jpeg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">草莓❄️期間限定</h4>
+                <p class="card-text">季節限定的配料，新鮮的草莓給吐司帶來了色彩繽紛的果香享受。</p>
+            </div>
+        </div>
+        <div class="card col-sm-3" style="width:400px ">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPUqrJEp_z6nbqb0KBunGOUGVAqtsSOKRDMA&usqp=CAU"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">酪梨🆕新品暢銷</h4>
+                <p class="card-text">酪梨含有健康的單不飽和脂肪酸，提供了營養價值和滿足感，是健康美味的選擇。</p>
+            </div>
+        </div>
+        <div class="card col-sm-3" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid" src="https://cw1.tw/CW/images/fck/F1450831795371.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">起司🆕新品暢銷</h4>
+                <p class="card-text">無論是單獨享用還是與其他配料搭配，都能為您帶來美味的享受。</p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://tokyo-kitchen.icook.network/uploads/recipe/cover/281333/7cdad92f5fb6f6d0.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">👍培根</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://mall.iopenmall.tw/website/uploads_product/website_8040/P0804004738146_3_41038540.jpeg?hash=48061"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">👍雞肉</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/295d3278770956802cdceb33b2cbfd37/Derivates/8ea4feea1579f0cbf1ff497e3aa2e7b1fa5e849a.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">👍紅豆</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://hips.hearstapps.com/hmg-prod/images/directly-above-shot-of-matcha-tea-in-bowl-on-table-royalty-free-image-1582701903.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">👍抹茶</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2022/04/12/20220412-120355_U19741_M756557_7986.jpeg?itok=wGv6lgaI"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">蛋</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://images.chinatimes.com/newsphoto/2021-01-23/656/20210123003966.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">半熟蛋</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://www.leezen.com.tw/uploads/product/product_photo_20200930155624_lul_tw.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">玉米</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://www.cisfoods.com.tw/archive/image/product2/images/1701743799713.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">火腿</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://imgs.gvm.com.tw/upload/gallery/20200513/72413_01.jpg" style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">洋蔥</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://i.epochtimes.com/assets/uploads/2021/05/id12927539-shutterstock_143668231-600x400.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">番茄</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://vegemap.merit-times.com/_i/assets/upload/nutrition/72450fc126cf2862dca8530ad4d7bf2f.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">高麗菜</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://img.ltn.com.tw/Upload/playing/page/2022/09/08/220908-26680-11-o99Qq.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">鮪魚</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://tokyo-kitchen.icook.network/uploads/recipe/cover/69881/387c1a18bf125163.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">豬肉</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/0A840742-1A33-4E06-80AA-2943E5BBBBF4/Derivates/bab5e1de-b06a-44ef-90ac-ba50a0d2df0b.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">牛肉</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://d3l76hx23vw40a.cloudfront.net/recipe/whk101-019a.jpg" style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">馬鈴薯沙拉</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://images.agriharvest.tw/wp-content/uploads/2021/09/eiliv-sonas-aceron-k9X5yGle-NA-unsplash-1024x683.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">香蕉</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://www.gqfood.com.tw/archive/image/product1/images/zco_04.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <p class="card-text">巧克力醬</p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/69EEE3D5-AB76-4799-9A14-0E4E375B6A36/Derivates/b7b39872-a1f7-4936-b635-793aec3791fb.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">草莓果醬</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/73D08316-8BDE-43CD-886E-E69ACB3CE545/Derivates/6d875791-d5ec-412e-9bd0-edced4ee5442.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">藍莓果醬</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="data:image/jpeg;base64,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"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">棉花糖</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://imageproxy.icook.network/resize?background=255%2C255%2C255&height=150&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F177186%2F1a5000df0c0d6937.jpg&width=200"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">芋泥</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://www.healthnews.com.tw/imageFile/202306/d53b52542c741dbfb32f3520d97218a3_l.webp"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">蜂蜜</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card" style="width:400px">
+            <img class="card-img-top mx-auto img-fluid"
+                src="https://www.hucc-coop.tw/uploads/01%E7%94%A2%E5%93%81%E8%88%87%E7%94%9F%E7%94%A2%E8%80%85/%E7%94%A2%E5%93%81%E5%9C%96%E6%AA%94/%E5%A5%B6%E8%9B%8B%E8%B1%86%E4%BA%94%E7%A9%80/%E5%A5%B6%E4%B9%B3%E8%A3%BD%E5%93%81/%E5%84%AA%E8%B3%AA%E5%A5%B6%E6%B2%B9(%E7%84%A1%E9%B9%BD)-250g/%E6%BE%B3%E6%B4%B2%E5%A5%B6%E6%B2%B9_%E6%83%85%E5%A2%83%E6%AD%A3%E6%96%B9%E5%B0%8F%E5%9C%962.jpg"
+                style="width:400px; height:250px">
+            <div class="card-body">
+                <h4 class="card-title">奶油</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+</body>
+
+</html>
+
+{% endblock %}

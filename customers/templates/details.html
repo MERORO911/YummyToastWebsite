@@ -1,0 +1,28 @@
+{% extends "master.html" %}
+
+{% block title %}
+Details about {{ mycustomer.firstname }} {{ mycustomer.lastname }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <h3 class="text-success">
+    {{ mycustomer.lastname }}{{ mycustomer.firstname }}
+  </h3>
+
+  <ul>
+    <li><strong>User ID: </strong>{{ mycustomer.cus }}</li>
+    <li><strong>Phone: </strong>{{ mycustomer.tel }}</li>
+    <li><strong>Member since: </strong>{{ mycustomer.joined_date }}</li>
+    <li><strong>Age: </strong>{{ mycustomer.age }}</li>
+  </ul>
+
+</div>
+
+<div class="container m-5">
+  <p>Back to: <a href='/customers/'>customers</a></p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,161 @@
+{% extends "master.html" %}
+
+{% block title %}
+Yummy Toast
+{% endblock %}
+
+{% block content %}
+{% comment %} {{ post_form.errors }} {% endcomment %}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Function to calculate the total cost
+        function calculateTotal() {
+            const toastPrice = {
+                "蜂蜜麥片吐司": 45,    // Define prices for each type of toast
+                "白吐司": 20,
+                // Add prices for other toast types...
+                "全麥吐司": 40,
+                "多穀吐司": 35,
+                "法式麵包": 30,
+                "全素吐司": 20,
+            };
+
+            const toppingPrice = {
+                "草莓": 15,    // Define prices for each topping
+                "酪梨": 15,
+                "起司": 10,
+                "培根": 15,
+                "雞肉": 15,
+                "紅豆": 5,
+                "抹茶": 5,
+                "蛋": 10,
+                "半熟蛋": 10,
+                "玉米": 5,
+                "火腿": 15,
+                "洋蔥": 5,
+                "番茄": 5,
+                "高麗菜": 10,
+                "鮪魚": 5,
+                "豬肉": 10,
+                "牛肉": 25,
+                "馬鈴薯沙拉": 5,
+                "香蕉": 5,
+                "巧克力醬": 5,
+                "草莓果醬": 5,
+                "藍莓果醬": 5,
+                "棉花糖": 10,
+                "芋泥": 5,
+                "蜂蜜": 5,
+                "奶油": 5,
+
+                // Add prices for other toppings...
+            };
+
+            // Retrieve selected values from the form
+            const selectedToast = document.getElementById("id_toast").value;
+            const selectedToppings = [
+                document.getElementById("id_sub_1").value,
+                document.getElementById("id_sub_2").value,
+                document.getElementById("id_sub_3").value,
+            ];
+
+            // Calculate total cost based on selected items
+            let totalCost = toastPrice[selectedToast] || 0;  // Default to 0 if toast not found
+            selectedToppings.forEach(topping => {
+                totalCost += toppingPrice[topping] || 0;  // Default to 0 if topping not found
+            });
+
+            number = document.getElementById("id_num").value
+
+            return totalCost * number;
+        }
+
+        // Add event listener to form submission
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault();  // Prevent default form submission behavior
+
+            // Calculate the total cost
+            const total = calculateTotal();
+
+            // Display the total cost in an alert
+            alert(`總金額: $${total}`);
+
+            // Proceed with form submission if needed
+            this.submit();
+        });
+    });
+</script>
+<br><br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 border p-3 border border-dark p-3 " , style="background-color:rgb(222, 255, 156);">
+
+
+            <h3 class="text-success" style="text-align: center; ">訂購資訊</h3>
+
+            <form action="." method="post">
+
+                <label>請填寫訂購資料: </label><br>
+                {% csrf_token %}
+
+                <div class="form-group text-left">
+                    帳號:
+                    {{ booking_form.cus }}
+                </div>
+
+                <div class="form-group text-left">
+                    {{ booking_form.name.label }}:
+                    {{ booking_form.name }}
+                </div>
+
+                <div class="form-group text-left">
+                    選擇分店:
+                    {{ booking_form.store }}
+                </div>
+
+                <div class="form-group text-left">
+                    選擇吐司種類:
+                    {{ booking_form.toast }}
+                </div>
+
+                <div class="form-group text-left">
+                    選擇配料:
+                    {{ booking_form.sub_1 }}{{ booking_form.sub_2 }}{{ booking_form.sub_3 }}
+                </div>
+
+                <div class="form-group text-left">
+                    選擇數量:
+                    {{ booking_form.num }}
+                </div>
+
+                <div class="form-group text-left">
+                    {{ booking_form.date.label }}:
+                    {{ booking_form.date }}
+                </div>
+
+                <div class="form-group text-left">
+                    預訂時間:
+                    {{ booking_form.hour }} 點
+                    {{ booking_form.min }} 分
+                </div>
+
+                <div class="form-group text-left">
+                    {{ booking_form.tel.label }}:
+                    {{ booking_form.tel }}
+                </div>
+
+                <div class="form-group text-left">
+                    {{ booking_form.address.label }}:
+                    {{ booking_form.address }}
+                </div>
+                <br>
+
+                <input type="submit" value="確定訂購" class="btn btn-warning">
+
+            </form>
+        </div>
+    </div>
+</div>
+<br><br>
+
+{% endblock %}
