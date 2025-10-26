@@ -37,8 +37,8 @@
 ---
 
 ## 👥 開發成員
-| 姓名 | 學號 | 
-|------|------|
+| GitHub 帳號 |
+|------|
 | [@MERORO911](https://github.com/MERORO911) |
 | [@Sarah0423](https://github.com/Sarah0423) |
 
