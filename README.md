@@ -7,7 +7,7 @@
 
 ## 🔗 專案連結
 - [PPT簡報](https://docs.google.com/presentation/d/11zWhENFzQu7OCy5F2_rJAkg852nr-3iwOfi2AGy1cTU/edit?usp=sharing)
-- [GitHub]
+- [GitHub](https://github.com/MERORO911/YummyToastWebsite)
 
 ---
 
