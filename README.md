@@ -6,8 +6,8 @@
 ---
 
 ## 🔗 專案連結
-- [PPT簡報](https://docs.google.com/presentation/d/11zWhENFzQu7OCy5F2_rJAkg852nr-3iwOfi2AGy1cTU/edit?usp=sharing)
-- [GitHub](https://github.com/MERORO911/YummyToastWebsite)
+- PPT簡報: [https://docs.google.com/presentation/d/11zWhENFzQu7OCy5F2_rJAkg852nr-3iwOfi2AGy1cTU/edit?usp=sharing](https://docs.google.com/presentation/d/11zWhENFzQu7OCy5F2_rJAkg852nr-3iwOfi2AGy1cTU/edit?usp=sharing)
+- GitHub Repo: [https://github.com/MERORO911/YummyToastWebsite](https://github.com/MERORO911/YummyToastWebsite)
 
 ---
 
@@ -39,8 +39,8 @@
 ## 👥 開發成員
 | 姓名 | 學號 | 
 |------|------|
-| 張雅雯 | D1126860 |
-| 蔡欣樺 | D1158565 |
+| [@MERORO911](https://github.com/MERORO911) |
+| [@Sarah0423](https://github.com/Sarah0423) |
 
 ---
 
